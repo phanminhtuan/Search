@@ -2,22 +2,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="${relativePackage}.${activityClass}" >
+    tools:context="${relativePackage}.${activityClass}" >  
 
-    <Button 
-        android:id="@+id/btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="button"
-        />
-
-    <ListView
-        android:id="@+id/listView1"
+    <EditText
+        android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/btn" >
+        android:layout_alignParentTop="true"
+        android:hint="Nhập từ cần tra"
+        android:ems="10" >
 
-    </ListView>
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnTim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="Tra nghĩa từ" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnTim"
+        android:layout_marginTop="20dp"
+         />
+
+    <Button
+        android:id="@+id/btnDoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="29dp"
+        android:text="Đọc" />
 
 </RelativeLayout>

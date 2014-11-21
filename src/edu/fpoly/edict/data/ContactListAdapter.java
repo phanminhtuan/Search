@@ -47,6 +47,12 @@ public class ContactListAdapter extends BaseAdapter {
 				item.setLoaiTu(cursor.getString(cursor.getColumnIndex(ContactTable.FIELD_LOAITU)));
 				item.setNghiaTu(cursor.getString(cursor.getColumnIndex(ContactTable.FIELD_NGHIA)));
 				mList.add(item);
+//				if (txtTu.getText().toString().equals(item.getTu())) {
+////					Log.d("tu", item.getTu());
+////				} else {
+////					Toast.makeText(getApplicationContext(), "ko cos",
+////							Toast.LENGTH_LONG).show();
+////				}
 			}	
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -80,8 +86,8 @@ public class ContactListAdapter extends BaseAdapter {
 			TextView tv2 = (TextView) convertView.findViewById(R.id.textView2);
 			TextView tv3 = (TextView) convertView.findViewById(R.id.textView3);
 			
-			tv1.setText(""+mList.get(position).getTu());
-			tv2.setText(""+mList.get(position).getLoaiTu());
+//			tv1.setText(""+mList.get(position).getTu());
+//			tv2.setText(""+mList.get(position).getLoaiTu());
 			tv3.setText(""+mList.get(position).getNghiaTu());
 		}
 		
